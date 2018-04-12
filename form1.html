@@ -8,17 +8,21 @@
 </head>
 <body>
     <form action="" method="get">
+        <fieldset>
         <label for="username"> enter name</label><input type="text" name="user name" size="20" maxlength="16" value="user name"> <br />
         <label for="password"> enter pass </label><input type="password" name="password" size="22" maxlength="16" > <br />
         <label for="realname"> enter real name</label><input type="text" name="real name" size="16" value="real name"> <br />
         <label for="mail"> enter e-mail</label><input type="text" name="mail" size="20" value="e-mail"> <br /><br />
-
-        <input type="radio" name="sex" value="male">male<input type="radio" name="sex" value="female">female <br /><br />
-
         <label for="phonenumber"> enter phonenumber</label><input type="text" name="number" size="20" value="+886"> <br /><br />
+        </fieldset>
+        <fieldset>
+            <legend>sex</legend>
+        <input type="radio" name="sex" value="male">male<input type="radio" name="sex" value="female">female <br /><br />
+        </fieldset>
         
-        interest<br /><textarea name="hab" id="" cols="30" rows="10"></textarea><br /><br />
-
+        <fieldset>
+                <legend>interest</legend><textarea name="hab" id="" cols="30" rows="10"></textarea><br />
+        </fieldset>
 
         <input type="submit" value="submit"> <input type="reset" value="reset">
     </form>
